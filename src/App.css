@@ -1,15 +1,46 @@
-.app-container {
-  font-family: sans-serif;
-  text-align: center;
-  padding: 2rem;
-  background-color: #f2f2f2;
-  min-height: 100vh;
+/* Container already exists, so we’ll add new classes */
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 1rem;
+  font-size: 1rem;
 }
 
-.weather-info {
+button {
+  padding: 0.5rem 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+.weather-card {
   margin-top: 2rem;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   display: inline-block;
+  min-width: 280px;
+  text-align: center;
+}
+
+.weather-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.3rem 0;
 }
